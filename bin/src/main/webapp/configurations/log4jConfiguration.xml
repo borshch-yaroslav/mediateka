@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<appender name="debugMainAppender" class="org.apache.log4j.DailyRollingFileAppender">
+
+		<param name="File" value="logs/debug.log" />
+		<param name="Append" value="true" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-6r [%15.15t] %-5p %30.30c %x - %m%n" />
+		</layout>
+
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="LevelMax" value="INFO" />
+			<param name="LevelMin" value="DEBUG" />
+			<param name="AcceptOnMatch" value="true" />
+		</filter>
+
+	</appender>
+
+
+	<appender name="warningMainAppender" class="org.apache.log4j.DailyRollingFileAppender">
+
+		<param name="File" value="logs/warning.log" />
+		<param name="Append" value="true" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-6r [%15.15t] %-5p %30.30c %x - %m%n" />
+		</layout>
+
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="LevelMax" value="WARN" />
+			<param name="LevelMin" value="WARN" />
+			<param name="AcceptOnMatch" value="true" />
+		</filter>
+
+	</appender>
+
+	<appender name="errorMainAppender" class="org.apache.log4j.DailyRollingFileAppender">
+
+		<param name="File" value="logs/error.log" />
+		<param name="Append" value="true" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-6r [%15.15t] %-5p %30.30c %x - %m%n" />
+		</layout>
+
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="LevelMax" value="OFF" />
+			<param name="LevelMin" value="ERROR" />
+			<param name="AcceptOnMatch" value="true" />
+		</filter>
+
+	</appender>
+
+
+
+
+	<root>
+		<priority value="debug" />
+		<appender-ref ref="debugMainAppender" />
+		<appender-ref ref="errorMainAppender" />
+		<appender-ref ref="warningMainAppender" />
+	</root>
+
+</log4j:configuration>

@@ -1,0 +1,169 @@
+* 
+{
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+body {
+	overflow: auto; /* добавить полосу прокрутки */
+}
+
+.main {
+	min-height: 92%;
+}
+
+.nav-wrapper a img {
+	width: 3.0em;
+	height: 2.0em;
+}
+
+section {
+	padding: 1.0em;
+}
+
+#top-user-name {
+	-webkit-transition: padding 2.0s;
+	background-color: #fff;
+}
+
+#top-user-name:hover {
+	-webkit-transition: border-radius 2.0s;
+	background-color: #fff;
+}
+
+.main-info {
+	padding-bottom: 2.0em;
+	width: 73.0%;
+	margin: auto;
+}
+
+.modal .modal-content #creation_form .container p {
+	color: grey;
+	font-family: Cursive;
+	margin-bottom: -0.5em;
+}
+
+.modal .modal-content #creation_form .container {
+	margin-top: 1.0em;
+}
+
+.modal .modal-content #creation_form .container .row {
+	margin-top: -2.0em;
+}
+
+.modal .modal-content #creation_form .container {
+	margin-top: 5.0em;
+}
+
+
+.titler button{
+	display: inline;
+}
+
+
+.my-picture-wrap {
+
+	height: 10.0em;
+	width: 100%;
+}
+
+
+.my-picture-wrap .my-picture-club {
+	background-size: cover;
+	background-position: center;
+	margin-top:-7em;
+}
+
+.my-picture-wrap .my-picture{
+	background-size: cover;
+	background-position: center;
+}
+
+
+.my-parallax {
+	min-height: 35.8em;
+	width: 100.0%;
+}
+
+.my-admin-card {
+	width: 12.0em;
+	height: 12.0em;
+	border-radius:5%;
+}
+
+.section white .container #infoText {
+	height: 20.0em;
+}
+
+.my-card:hover {
+	background-color: #e8eaf6;
+	min-width:13.5em;
+}
+
+.my-card img {
+	margin-top: -1.0em;
+	margin-left: 1.0em;
+}
+
+.my-badge {
+	color: #03a9f4;
+	margin-top: 1.0em;
+	font-size: 2.0em;
+}
+
+.club-badge {
+	color: #03a9f4;
+	margin-top: 1.5em;
+	font-size: 2.0em;
+}
+
+.profile-tooltipped #div {
+	
+	background-color: rgba(255.0, 255.0, 255.0);
+	border-radius: 0.0px 15.0px 15.0px 15.0px;
+	box-shadow: 1.0px 1.0px 10.0px rgba(0.0, 0.0, 0.0, 0.5);
+	color: #000;
+	padding: 10.0px 10.0px 10.0px 20.0px;
+	position: absolute;
+	text-decoration: none;
+	visibility: hidden;
+	width: 285.0px;
+	min-height: 10.0em;
+	z-index: 100.0;
+}
+
+.profile-tooltipped:hover #div {
+	visibility: visible;
+	z-index:1001;
+}
+
+.profile-tooltipped #div img {
+	border: 0.0 none;
+	float: left;
+	opacity: 0.0;
+	position: absolute;
+	visibility: hidden;
+	z-index: -1.0;
+}
+
+.profile-tooltipped:hover #div img {
+	opacity: 1.0;
+	visibility: visible;
+}
+
+.profile-tooltipped #div p {
+	margin-left: 6.0em;
+	margin-bottom: -3.0em;
+}
+
+div.container-side{
+	position: fixed;
+	margin-top: 3.9em;
+}
